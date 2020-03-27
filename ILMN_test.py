@@ -38,14 +38,14 @@ def modelTest(name):
     ypred = bst.predict(dtest)
     stock['pred']=ypred
     
-    stock['Close'].plot(grid=True,label='actual close')
-    stock['pred'].plot(grid=True,label='prediction')
+    #stock['Close'].plot(grid=True,label='actual close')
+    #stock['pred'].plot(grid=True,label='prediction')
     rms = sqrt(mean_squared_error(stock['Close'], stock['pred']))
-    print('rms is ',rms)
-    print('actual close is ',stock['Close'][-1:])
-    print('prediced close is ', stock['pred'][-1:])
-    plt.legend(loc='upper left')
-    plt.show()
+    #print('rms is ',rms)
+    #print('actual close is ',stock['Close'][-1:])
+    #print('prediced close is ', stock['pred'][-1:])
+    #plt.legend(loc='upper left')
+    #plt.show()
     
     stock.to_csv('test.csv')
         # dump model
