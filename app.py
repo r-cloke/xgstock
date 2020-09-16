@@ -141,4 +141,4 @@ def update_figure(selected_stock):
 
 
 if __name__ == '__main__':
-    app.run_server(debug=True, use_reloader=False,threaded=True)
+    app.run_server(debug=False)
