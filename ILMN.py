@@ -17,8 +17,8 @@ from sklearn.metrics import mean_squared_error
 
 name='AMZN'
 stock = pdr.get_data_yahoo(name, 
-                          start=datetime.datetime(2006, 10, 1), 
-                          end=datetime.datetime(2019, 4, 1))
+                          start=datetime.datetime(2019, 10, 1), 
+                          end=datetime.datetime(2020, 6, 1))
 
 
 # Plot the closing prices for `aapl`
